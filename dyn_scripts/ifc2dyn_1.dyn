@@ -1,0 +1,499 @@
+{
+  "Uuid": "e496ff84-120f-441d-80d7-4b45efb34301",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "ifc2dyn_1",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "ifc2dyn.IfcDoc.IfcDoc@string",
+      "Id": "33fbfefaa4aa4778aa80fea0ab857eb8",
+      "Inputs": [
+        {
+          "Id": "07680da907ae44ea8d13163de39b151c",
+          "Name": "PathToFile",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "44398c4d43ff4afda3d9c139969e83cf",
+          "Name": "IfcDoc",
+          "Description": "IfcDoc",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "IfcDoc.IfcDoc (PathToFile: string): IfcDoc"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "ifc2dyn.IfcDoc.IfcSharedBldgElements_enities",
+      "Id": "f261ca91ce4343d1b597d0e4aa39936a",
+      "Inputs": [
+        {
+          "Id": "48fbbe5d7b2a47a0a355b8c523b01167",
+          "Name": "ifcDoc",
+          "Description": "ifc2dyn.IfcDoc",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f4236cad6cc047e4b862369887e85370",
+          "Name": "IfcBeam",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a5194b1811b04a72a0bb6827ba92e737",
+          "Name": "IfcBuildingElementProxy",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9f06940c423a42d291c4273304081b31",
+          "Name": "IfcChimney",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0f30ee87899b45b981fc15739d670be9",
+          "Name": "IfcColumn",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5a0371d687f8458f82548a945d15bb65",
+          "Name": "IfcCovering",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "97a15477b016476ea4cca419ff3b926f",
+          "Name": "IfcCovering",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2de6e49633794588a753eae625c5740b",
+          "Name": "IfcCurtainWall",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b3ea1888d86b40928ac1c6377b52be56",
+          "Name": "IfcDoor",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7fff914f2a0b400d8f507dc0a84c9439",
+          "Name": "IfcMember",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2b2c2ab0d0dd4fc6a8fc6d6add2a7faf",
+          "Name": "IfcPlate",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ebd83252a6954a23b0087046d1f20548",
+          "Name": "IfcRailing",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "de21cbfb25024f8d84970093560f3b77",
+          "Name": "IfcRamp",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f41f3dbe478345519a7a4c88405cdad6",
+          "Name": "IfcRoof",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "79e3a8915ceb46e79ac69d7e25b79042",
+          "Name": "IfcSlab",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "cf51126fde45429e87ddbc858942bca1",
+          "Name": "IfcStair",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "cecf7cc2a843470d9fbf28f727acefb5",
+          "Name": "IfcWall",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "88a8f5d218c94eb38eda424e3af4c6da",
+          "Name": "IfcWindow",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "IfcDoc.IfcSharedBldgElements_enities: var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "ifc2dyn.IfcElementInfo.IfcElementInfo@var",
+      "Id": "38c0dacf96e84edcaae3329b44b11127",
+      "Inputs": [
+        {
+          "Id": "a74a8ad9f65e4b4a80e11b031d0e15ea",
+          "Name": "input_element",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e0327bff71cf4316b6d84d3d6d12a1fe",
+          "Name": "IfcElementInfo",
+          "Description": "IfcElementInfo",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "IfcElementInfo.IfcElementInfo (input_element: var): IfcElementInfo"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "ifc2dyn.IfcElementInfo.info",
+      "Id": "7d21e2f60fb64c41be9d98217128e365",
+      "Inputs": [
+        {
+          "Id": "5c41bed93b1341f9a5f6791e14495632",
+          "Name": "ifcElementInfo",
+          "Description": "ifc2dyn.IfcElementInfo",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c674856eec434cdaa398faf8469ff106",
+          "Name": "Description",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "958c4f229d8e4aadbcda881bb5cf7527",
+          "Name": "GlobalId",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "59c5e6473d544e788251ce4d51d0d071",
+          "Name": "Guid",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b98bd5d690004fdea97a81296ad2c53c",
+          "Name": "Index",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "40f840f83cfb418dabbc959bd9032e2e",
+          "Name": "Name",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "875116556a124a50b4d2d1d85d237582",
+          "Name": "ObjectPlacement",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "aa15b50e723b432da37ca44b4fa02c6e",
+          "Name": "ObjectType",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "52fd7b769ce34665ac8caceb3912a80b",
+          "Name": "Representation",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c21eb2b3fda041de94191944990e7642",
+          "Name": "StepClassName",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "23a53099eff14fa8936d6b88413c8f12",
+          "Name": "Tag",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "IfcElementInfo.info: var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
+      "HintPath": "E:\\Temp\\Знаки_индор.ifc",
+      "InputValue": "E:\\Temp\\Знаки_индор.ifc",
+      "NodeType": "ExtensionNode",
+      "Id": "4e8fec42bf1a493ab1d49f29835fadb8",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "1919fc1e1b5f46659af1664d36bcb118",
+          "Name": "",
+          "Description": "Путь к файлу",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Возможность выбрать файл в системе и получить путь к нему."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "44398c4d43ff4afda3d9c139969e83cf",
+      "End": "48fbbe5d7b2a47a0a355b8c523b01167",
+      "Id": "1b03dc4d2aa545d8a8c78a61d3df2ae4"
+    },
+    {
+      "Start": "a5194b1811b04a72a0bb6827ba92e737",
+      "End": "a74a8ad9f65e4b4a80e11b031d0e15ea",
+      "Id": "265953e46dd24bfa9f999347a7fcd5ed"
+    },
+    {
+      "Start": "e0327bff71cf4316b6d84d3d6d12a1fe",
+      "End": "5c41bed93b1341f9a5f6791e14495632",
+      "Id": "ddd73ab720744552b893d544ff7a1632"
+    },
+    {
+      "Start": "1919fc1e1b5f46659af1664d36bcb118",
+      "End": "07680da907ae44ea8d13163de39b151c",
+      "Id": "77a61d9a89504c0e83289fe0f4c2aa44"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.12",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "Нет",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.12.1.8246",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Фоновый просмотр",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "Id": "33fbfefaa4aa4778aa80fea0ab857eb8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Name": "IfcDoc.IfcDoc",
+        "ShowGeometry": true,
+        "Excluded": false,
+        "X": 672.42518041751327,
+        "Y": 528.86607852889756
+      },
+      {
+        "Id": "f261ca91ce4343d1b597d0e4aa39936a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Name": "IfcDoc.IfcSharedBldgElements_enities",
+        "ShowGeometry": true,
+        "Excluded": false,
+        "X": 1143.4947526608469,
+        "Y": 472.92434332658274
+      },
+      {
+        "Id": "38c0dacf96e84edcaae3329b44b11127",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Name": "IfcElementInfo.IfcElementInfo",
+        "ShowGeometry": true,
+        "Excluded": false,
+        "X": 1504.5994065281895,
+        "Y": 501.60237388724033
+      },
+      {
+        "Id": "7d21e2f60fb64c41be9d98217128e365",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Name": "IfcElementInfo.info",
+        "ShowGeometry": true,
+        "Excluded": false,
+        "X": 1873.7507377256557,
+        "Y": 505.05776630377784
+      },
+      {
+        "Id": "4e8fec42bf1a493ab1d49f29835fadb8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Name": "File Path",
+        "ShowGeometry": true,
+        "Excluded": false,
+        "X": 364.70724788782218,
+        "Y": 645.23339768409232
+      }
+    ],
+    "Annotations": [],
+    "X": -1254.5722111560965,
+    "Y": -1126.8483284787342,
+    "Zoom": 1.4186795794629976
+  }
+}
