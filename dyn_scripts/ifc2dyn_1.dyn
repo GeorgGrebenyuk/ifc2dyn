@@ -374,6 +374,36 @@
       ],
       "Replication": "Disabled",
       "Description": "Возможность выбрать файл в системе и получить путь к нему."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "ifc2dyn.IfcDoc.GetElements",
+      "Id": "c48155bc7cde420e841141214b7eda6d",
+      "Inputs": [
+        {
+          "Id": "bf39af8697d9450fbb5719f80c6bae90",
+          "Name": "ifcDoc",
+          "Description": "ifc2dyn.IfcDoc",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ccac2849e4eb42efb0a4a8786849e67d",
+          "Name": "var[]..[]",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "IfcDoc.GetElements ( ): var[]..[]"
     }
   ],
   "Connectors": [
@@ -381,6 +411,11 @@
       "Start": "44398c4d43ff4afda3d9c139969e83cf",
       "End": "48fbbe5d7b2a47a0a355b8c523b01167",
       "Id": "1b03dc4d2aa545d8a8c78a61d3df2ae4"
+    },
+    {
+      "Start": "44398c4d43ff4afda3d9c139969e83cf",
+      "End": "bf39af8697d9450fbb5719f80c6bae90",
+      "Id": "4fa795d999f74e90aeadf916b6ec8501"
     },
     {
       "Start": "a5194b1811b04a72a0bb6827ba92e737",
@@ -441,59 +476,69 @@
     },
     "NodeViews": [
       {
+        "ShowGeometry": true,
+        "Name": "IfcDoc.IfcDoc",
         "Id": "33fbfefaa4aa4778aa80fea0ab857eb8",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "IfcDoc.IfcDoc",
-        "ShowGeometry": true,
         "Excluded": false,
-        "X": 672.42518041751327,
-        "Y": 528.86607852889756
+        "X": 368.77032509634751,
+        "Y": 577.450855380284
       },
       {
+        "ShowGeometry": true,
+        "Name": "IfcDoc.IfcSharedBldgElements_enities",
         "Id": "f261ca91ce4343d1b597d0e4aa39936a",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "IfcDoc.IfcSharedBldgElements_enities",
-        "ShowGeometry": true,
         "Excluded": false,
-        "X": 1143.4947526608469,
-        "Y": 472.92434332658274
+        "X": 850.25092095069226,
+        "Y": 457.30780791006566
       },
       {
+        "ShowGeometry": true,
+        "Name": "IfcElementInfo.IfcElementInfo",
         "Id": "38c0dacf96e84edcaae3329b44b11127",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "IfcElementInfo.IfcElementInfo",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 1504.5994065281895,
         "Y": 501.60237388724033
       },
       {
+        "ShowGeometry": true,
+        "Name": "IfcElementInfo.info",
         "Id": "7d21e2f60fb64c41be9d98217128e365",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "IfcElementInfo.info",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 1873.7507377256557,
         "Y": 505.05776630377784
       },
       {
+        "ShowGeometry": true,
+        "Name": "File Path",
         "Id": "4e8fec42bf1a493ab1d49f29835fadb8",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "File Path",
-        "ShowGeometry": true,
         "Excluded": false,
-        "X": 364.70724788782218,
-        "Y": 645.23339768409232
+        "X": 61.052392566656408,
+        "Y": 693.81817453547876
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "IfcDoc.GetElements",
+        "Id": "c48155bc7cde420e841141214b7eda6d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1229.2837834688194,
+        "Y": 1009.3980174846736
       }
     ],
     "Annotations": [],
-    "X": -1254.5722111560965,
-    "Y": -1126.8483284787342,
-    "Zoom": 1.4186795794629976
+    "X": -1293.1656439633416,
+    "Y": -1353.5148095330726,
+    "Zoom": 1.4445499996216724
   }
 }

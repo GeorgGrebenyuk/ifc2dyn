@@ -15,6 +15,7 @@ namespace ifc2dyn
     {
         [dr.IsVisibleInDynamoLibrary(false)]
         public static DatabaseIfc ifc_db = null;
+
         public IfcDoc (string PathToFile)
         {
             ifc_db = new DatabaseIfc(PathToFile);
@@ -38,7 +39,7 @@ namespace ifc2dyn
             return ifc_lenth_element.Split(',').Last().Replace(")", String.Empty).Replace(".", String.Empty).Replace(";", String.Empty);
         }
 
-        public List<IBaseClassIfc> GetElements()
+        public object GetElements()
         {
             return ifc_db.Context.Extract<IBaseClassIfc>();
         }
@@ -71,26 +72,36 @@ namespace ifc2dyn
                 {"IfcWindow", ifc_db.Context.Extract<IfcWindow>()}
             };
         }
-        public static IEnumerable<object> sort_elements (List<IfcElement> objects)
+        public object GetElementsSorted ()
         {
-            //Фиксация Index элементов, которые либо перебраны, либо попали куда-то в колллекцию
-            List<int> used_elements = new List<int>();
-            List<int> all_indexes = objects.Select(a => a.Index).ToList();
-
-            foreach (IfcElement element in objects)
+            var pp = ifc_db.Project.Decomposes.RelatedObjects;
+            List<IfcSite> sites = ifc_db.Context.Extract<IfcSite>();
+            foreach (IfcSite site in sites)
             {
-                int index = element.Index;
-                if (!used_elements.Contains(index))
-                {
-                    if (element.Nests == null)
-                    {
-                        //PIZDES
-                    }
-                }
+                var pres_layers = site.Nests;
             }
-
+            
 
             return null;
+        }
+        /// <summary>
+        /// Getting IFC Element from DatabaseIfc by it's Index
+        /// </summary>
+        /// <param name="ifc_index">Integer value of element's Index</param>
+        /// <returns>IFC element</returns>
+        public static object ElementByIndex (int ifc_index)
+        {
+            return ifc_db.Context.Extract<IBaseClassIfc>().Where(a => a.Index == ifc_index).First();
+        }
+        /// <summary>
+        /// Getting Index of IFC element
+        /// </summary>
+        /// <param name="ifc_element">IFC element</param>
+        /// <returns>Integer value of element's Index</returns>
+        public static object GetIndexByElement (object ifc_element)
+        {
+            IBaseClassIfc ifc_data = ifc_element as IBaseClassIfc;
+            return ifc_data.Index;
         }
     }
 }

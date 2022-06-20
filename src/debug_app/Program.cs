@@ -12,6 +12,7 @@ namespace debug_app
         {
             IfcDoc test1 = new IfcDoc(@"E:\DataTest\Renga\BridgeEx.ifc");
             string units = test1.LengthUnits();
+            var ttt = test1.GetElementsSorted();
 
             Console.WriteLine(units);
 

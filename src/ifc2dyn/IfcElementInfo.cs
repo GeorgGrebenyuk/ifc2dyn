@@ -37,5 +37,6 @@ namespace ifc2dyn
         {
             this.element = input_element;
         }
+        
     }
 }
